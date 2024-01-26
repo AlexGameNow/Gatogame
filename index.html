@@ -4,30 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Atari 2600 Games</title>
+    <title>Atari Games Antigos</title>
+	
 </head>
 <body>
     <header>
         <h1>Atari 2600</h1>
         <nav>
-            <ol>
-                <h1>Escolha seu jogo</h1>
+            <ul>
+             <h3>Nostalgia Pura</h3>
+				
                 <!-- Adicione mais links conforme necessário -->
-            </ol>
+            </ul>
         </nav>
     </header>
 
     <main>
         <div id="game-list"></div>
+        <div id="game-list"></div>
+	
+		<audio controls>
+<source src="Musicas/Caballero.mp3" type="audio/mp3">
+Seu navegador é fraco!
+</audio>
+
+<br>
+
+<audio controls>
+<source src="Musicas/Akuma.mp3" type="audio/mp3">
+Seu navegador é fraco!
+</audio>
+
     </main>
 	
 	<footer>
-        <p>&copy; Alex Games 2024. </p>
+        <p>&copy; Alex e Emília 2024. </p>
     </footer>
 
     <script src="scripts.js"></script>
     <style>
+	
+	 audio {
+            display: inline-block;
+            margin-right: 10px;
+			}
+	
         body {
+		
+		
 		    background-color: #c4dedf;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -67,6 +91,7 @@
             height: auto;
         }
 		
+		
 		footer {
             background-color: #333;
             color: #fff;
@@ -81,6 +106,8 @@
         footer p {
             margin: 0;
         }
+		
+		
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -88,14 +115,17 @@
 
             // Exemplo de dados de jogos
             const games = [
-                { title: 'Enduro', image: 'Enduro.gif', link: 'enduro.html' },
-                { title: 'Frostbite', image: 'Frostbite.gif', link: 'frostbite.html' },
-                { title: 'Hero', image: 'Hero.gif', link: 'hero.html' },
-				{ title: 'River_Raid', image: 'River_Raid.gif', link: 'river_raid.html' },
+                { title: 'Enduro', image: 'Gif/Enduro.gif', link: 'https://www.retrogames.cz/play_028-Atari2600.php' },
+                { title: 'Frostbite', image: 'Gif/Frostbite.gif', link: 'https://www.retrogames.cz/play_072-Atari2600.php' },
+                { title: 'Hero', image: 'Gif/Hero.gif', link: 'https://www.retrogames.cz/play_228-Atari2600.php' },
+				{ title: 'River Raid', image: 'Gif/River Raid.gif', link: 'https://www.retrogames.cz/play_036-Atari2600.php' },
+				{ title: 'Bobby is Going Home', image: 'Gif/Bobby is Going Home.gif', link: 'https://www.retrogames.cz/play_192-Atari2600.php' },
+				{ title: 'Megamania', image: 'Gif/Megamania.gif', link: 'https://www.retrogames.cz/play_129-Atari2600.php' },
+				{ title: 'Missile Command', image: 'Gif/Missile Command.gif', link: 'https://www.retrogames.cz/play_080-Atari2600.php' },
                 // Adicione mais jogos conforme necessário
             ];
 
-            // Renderizar lista de jogos
+           // Renderizar lista de jogos
             games.forEach(game => {
                 const gameCard = document.createElement('div');
                 gameCard.className = 'game-card';
@@ -118,6 +148,7 @@
                 gameListElement.appendChild(gameCard);
             });
         });
+		
     </script>
 </body>
 </html>
